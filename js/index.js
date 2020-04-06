@@ -38,20 +38,21 @@ const siteContent = {
   },
 };
 
+
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
+/**NAV BAR */
 
 // WE NEED TO GRAB THE NAV AND CREATE THE HEADINGS
 // services, product, vision, features, about contact
 
+
+
 const navSelector = document.querySelectorAll('nav a');
-
-
-// console.log(navElem);
-
 
 
 
@@ -70,6 +71,30 @@ function navBar() {
 } // PUT THE NAV ITEMS ON THE TOP IS WORKING
 
 navBar();
+
+
+/**CTA BUTTON & TEXT */
+
+
+/**DOM TEXT */
+// create var for the h1 element
+const ctaH1s = document.querySelector('h1');
+
+
+ctaH1s.textContent = siteContent['cta']['h1'];
+
+
+/**BUTTON */
+
+
+
+
+
+
+
+
+
+
 
 
 
