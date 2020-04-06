@@ -41,3 +41,39 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+
+// WE NEED TO GRAB THE NAV AND CREATE THE HEADINGS
+// services, product, vision, features, about contact
+
+const navSelector = document.querySelectorAll('nav a');
+
+
+// console.log(navElem);
+
+
+// pull the values of the cardTitles object into an array
+
+
+
+
+
+function navBar() {
+
+  const navElem = Object.values(siteContent);
+
+
+    for (let i = 0; i < navElem.length - 1; i ++) {
+
+      navSelector[i].textContent = navElem[i];
+
+    }
+
+
+}
+
+navBar();
+
+
+
