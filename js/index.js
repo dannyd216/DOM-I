@@ -53,25 +53,21 @@ const navSelector = document.querySelectorAll('nav a');
 // console.log(navElem);
 
 
-// pull the values of the cardTitles object into an array
-
-
-
 
 
 function navBar() {
 
-  const navElem = Object.values(siteContent);
+  // pull the values of siteContent objects into an array
+  const navLinks = Object.values(siteContent.nav);
 
 
-    for (let i = 0; i < navElem.length - 1; i ++) {
+    for (let i = 0; i < navLinks.length - 1; i ++) {
 
-      navSelector[i].textContent = navElem[i];
+      navSelector[i].textContent = navLinks[i];
 
     }
 
-
-}
+} // PUT THE NAV ITEMS ON THE TOP IS WORKING
 
 navBar();
 
