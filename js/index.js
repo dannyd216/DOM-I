@@ -202,6 +202,21 @@ midImg.src = siteContent['main-content']['middle-img-src'];
 // console.log(midImg);
 
 
+/**CONTACT SECTION */
+
+//GRAB CONTENT SECTION TAGS
+
+// const contSectH4 = document.querySelector('.contact').querySelectorAll('h4');
+
+const contSect = document.querySelector('.contact');
+
+const h4Contact = contSect.querySelectorAll('h4');
+
+h4Contact.textContent = siteContent['contact']['contact-h4'];
+// contSectH4.textContent = siteContent['contact']['contact-h4'];
+
+console.log(h4Contact);
+
 
 
 
