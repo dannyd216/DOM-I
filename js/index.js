@@ -84,6 +84,7 @@ const ctaH1s = document.querySelector('h1');
 ctaH1s.textContent = siteContent['cta']['h1'];
 
 
+
 /**BUTTON */
 
 //CREATE VAR AND ASSIGN IT TO QUERYSELECTOR
@@ -199,26 +200,57 @@ const midImg = document.querySelector('.middle-img');
 
 midImg.src = siteContent['main-content']['middle-img-src'];
 
-// console.log(midImg);
 
 
 /**CONTACT SECTION */
 
 //GRAB CONTENT SECTION TAGS
 
-// const contSectH4 = document.querySelector('.contact').querySelectorAll('h4');
 
+// GRAB CONTACT SECTION CLASS
 const contSect = document.querySelector('.contact');
 
-const h4Contact = contSect.querySelectorAll('h4');
+// ASSIGN H4CONTACT TO THE H4 TAGS IN THE CONTACT SECTION
+const h4Contact = contSect.querySelector('h4');
 
+// ASSIGN THE TEXT OF THE H4 TAG
 h4Contact.textContent = siteContent['contact']['contact-h4'];
-// contSectH4.textContent = siteContent['contact']['contact-h4'];
 
-console.log(h4Contact);
+// ASSIGN VAR TO THE P TAGS IN 
+const pTagContact = contSect.querySelectorAll('p');
+
+// ASSIGN THE TEXTCONTENT OF ADDRESS
+pTagContact[0].textContent = siteContent['contact']['address'];
+
+// BOLD THE FONT
+pTagContact[0].style.fontWeight = 'bold';
+
+// ASSIGN THE TEXTCONTENT OF PHONE
+pTagContact[1].textContent = siteContent['contact']['phone'];
+
+// BOLD THE FONT
+pTagContact[1].style.fontWeight = 'bold';
+
+// ASSIGN THE TEXTCONTENT TO EMAIL
+pTagContact[2].textContent = siteContent['contact']['email'];
+
+// BOLD THE FONT
+pTagContact[2].style.fontWeight = 'bold';
 
 
 
+/**FOOTER*/
+
+// DECLARE THE VAR FOR THE FOOTER TAG
+const footer = document.querySelector('footer');
+
+// ASSIGN THE VAR FOR THE P TAGS
+const footPara = footer.querySelector('p');
+
+// ASSIGN THE TEXT OF THE P TAGS
+footPara.textContent = siteContent['footer']['copyright'];
+
+// console.log(footPara);
 
 
 
